@@ -14,7 +14,7 @@ const cart = () => {
     setSelectedProducts,] =
     useContext(mycontext);
 
-    const[showItem,setShowItem]=useState(false);
+  
 
   const totalPrice = selectedproducts.reduce(
     (total, data) => total + data.price * (data.quantity || 1),
@@ -151,9 +151,9 @@ const cart = () => {
                 </div>
               </Card>
               <div className="px-2 py-3 gap-2"> 
-                <Link to={"/payment"} >
+                
               <Button>Purchase Item </Button>
-              </Link>
+        
               </div>
             </div>
           </Col>
