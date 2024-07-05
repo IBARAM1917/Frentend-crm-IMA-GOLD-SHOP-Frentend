@@ -767,15 +767,14 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard  />}/>
         <Route path="/payment"  element={<Paymentmethod />} />
-        <Route element={<PrivateRoute  />}>     
-        <Route path="/query" element={<Blogs />} />
         <Route path="/jewellerys" element={<Jewellerys products={products} />} />
         <Route path="/bangles" element={<Bangles products={products} />} />
         <Route path="/earring" element={<Earings products={products} />} />
         <Route path="/rings" element={<Rings products={products} />} />
         <Route path="/card" element={ <Card  products={products}  setCount={setCount} count={count}  cart={cart} setCart={setCart} />} />
-      
-        </Route>
+        <Route element={<PrivateRoute  />}>     
+        <Route path="/query" element={<Blogs />} />
+       </Route>
         
       </Routes>
       <UserContextProvider>
