@@ -752,9 +752,11 @@ const App = () => {
     <mycontext.Provider value={[items,setItems,cartcount,setCartCount,selectedproducts,setSelectedProducts]}>  
     <Header />
        <Routes>
+      <Route element={<PrivateRoute  />}>
       <Route path="/productlist"  element={<ProductList   />}/>
       <Route path="/productsdetail/:productid" element={<ProductsDetail />} />
       <Route path="/cart" element={<Cart />}/>
+      </Route>
       </Routes>
     </mycontext.Provider>
       
