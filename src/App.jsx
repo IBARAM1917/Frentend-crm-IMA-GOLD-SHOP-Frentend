@@ -2,7 +2,7 @@ import React, { createContext, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
-import Blogs from "./Pages/Blogs";
+import Blogs from "./Pages/Reviws";
 import Signin from "./Pages/Signin";
 import Signup from "./Pages/Signup";
 import Header from "./Components/Header";
@@ -22,6 +22,7 @@ import ProductsDetail from "./Components/ProductsDetail";
 import ProductList from "./Pages/ProductList";
 import Dashboard from "./Pages/Dashboard";
 import Paymentmethod from "./Components/Paymentmethod";
+import Review from "./Pages/Reviws";
 
 
 export const mycontext=createContext("");
@@ -773,7 +774,7 @@ const App = () => {
         <Route path="/rings" element={<Rings products={products} />} />
         <Route path="/card" element={ <Card  products={products}  setCount={setCount} count={count}  cart={cart} setCart={setCart} />} />
         <Route element={<PrivateRoute  />}>     
-        <Route path="/query" element={<Blogs />} />
+        <Route path="/review" element={<Review  />} />
        </Route>
         
       </Routes>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Blogs = () => {
+const Review = () => {
   return (
     <div className="min-h-screen mb-5 py-3 px-3">
       <article>
@@ -117,4 +117,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default Review;
