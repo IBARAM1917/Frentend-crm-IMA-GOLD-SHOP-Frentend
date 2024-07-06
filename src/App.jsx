@@ -21,6 +21,7 @@ import productList from"./Pages/ProductList";
 import ProductsDetail from "./Components/ProductsDetail";
 import ProductList from "./Pages/ProductList";
 import Dashboard from "./Pages/Dashboard";
+import Paymentmethod from "./Components/Paymentmethod";
 import Review from "./Pages/Reviws";
 
 
@@ -766,6 +767,7 @@ const App = () => {
       <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard  />}/>
+        <Route path="/payment"  element={<Paymentmethod />} />
         <Route path="/jewellerys" element={<Jewellerys products={products} />} />
         <Route path="/bangles" element={<Bangles products={products} />} />
         <Route path="/earring" element={<Earings products={products} />} />

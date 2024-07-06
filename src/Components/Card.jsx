@@ -5,29 +5,8 @@ import { Link, useParams } from "react-router-dom";
 import { CardBody, CardText, CardTitle } from "react-bootstrap";
 
 
-const Card = ({ items,setItems,products,count,setCount,cart,setCart }) => {
+const Card = ({products }) => {
  
-  const handleAdd=()=>{
-    setCount((initialInc)=>initialInc+1);
-  };
-  const handleRemove=()=>{
-    if(count>0){
-      setCount((initialDec)=>initialDec-1);
-    }
-  }
-  const handleClick =(id)=>{
-    if(cart.includes(id)){
-      let newCart =cart.filter((element)=> element !== id);
-      console.log(newCart)
-      setCart(newCart);
-      handleRemove();
-    }else{
-      cart.push(id);
-      console.log(cart)
-      handleAdd();
-    }
-  }
-
 
     return(
     <div className="Card " > 

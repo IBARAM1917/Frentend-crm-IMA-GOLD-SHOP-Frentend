@@ -97,7 +97,7 @@ const cart = () => {
                       </span>
                     </div>
                     <div className="price_container">
-                      <strong>${element.price}</strong>
+                      <strong>₹{element.price}</strong>
                       <br />
                       <button
                         className="btn btn-danger"
@@ -128,7 +128,7 @@ const cart = () => {
                     <strong>SUBTOTAL:</strong>
                   </div>
                   <div>
-                    <strong>${totalPrice}</strong>
+                    <strong>₹{totalPrice}</strong>
                   </div>
                 </div>
                 <div className="total_container">
@@ -146,7 +146,7 @@ const cart = () => {
                     <strong>TOTAL:</strong>
                   </div>
                   <div>
-                    <strong>${totalPrice}</strong>
+                    <strong>₹{totalPrice}</strong>
                   </div>
                 </div>
               </Card>
