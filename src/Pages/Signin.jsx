@@ -65,7 +65,7 @@ const Signin = () => {
         />
       </div>
   
-        <div className="flex-1">
+       <div className="flex-1">
           <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
             <div>
               <Label value="Email" />
@@ -117,7 +117,7 @@ const Signin = () => {
               {errorMessage}
             </Alert>
           )}
-        </div>
+        </div> 
       </div>
     </div>
   );
