@@ -24,7 +24,7 @@ const Raisequery = () => {
       return setErrorMessage("Please Fill Out The Fields");
     };
     try {
-      const response = await fetch("http://localhost:5000/api/auth/postquery", {
+      const response = await fetch("https://crm-backend-iba-gold-shop-backend.onrender.com/api/auth/postquery", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
